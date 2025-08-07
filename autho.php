@@ -15,7 +15,7 @@ $user = $result->fetch_assoc();
 
 if(!$user){
        
-    echo "Такой пользователь или пароль не найден";
+    echo "No such user or password found";
     exit();
         
 }
