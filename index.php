@@ -19,7 +19,7 @@
                 <input type="text" class="form-control" name="login" placeholder="Enter login"><br>
                 <input type="text" class="form-control" name="email" placeholder="Enter email"><br>
                 <input type="password" class="form-control" name="password" placeholder="Enter password"><br>
-                <button type="submit" class="btn btn-success">Отправить</button>
+                <button type="submit" class="btn btn-success">Submit</button>
             </form>
         </div>
             <div class="col"><br><br><br>
@@ -27,11 +27,11 @@
                 <form action="autho.php" method="post">
                     <input type="text" class="form-control" name="login" placeholder="Enter login"><br>
                     <input type="password" class="form-control" name="password" placeholder="Enter password"><br>
-                    <button type="submit" class="btn btn-success">Отправить</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </form>
             </div>
             <?php else: ?>
-                <p>Привет <?=$_COOKIE['user']?>. Чтоб выйти, нажмите<a href="/exit.php"> здесь </a></p>
+                <p>Hello  <?=$_COOKIE['user']?>. To exit, click<a href="/exit.php"> here </a></p>
 
             <?php endif;?>
         </div>
